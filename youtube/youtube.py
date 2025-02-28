@@ -15,7 +15,7 @@ import requests
 from PIL import Image
 from concurrent.futures import ThreadPoolExecutor
 
-YT_COOKIES_PATH = "./cookies/ItsSmartToolBot.txt"
+YT_COOKIES_PATH = "cookies.txt"
 
 # Configure logging
 logging.basicConfig(
