@@ -141,4 +141,7 @@ async def start_menu_callback(client: Client, callback_query: CallbackQuery):
     )
 
 print("Bot Successfully Started! 💥")
-app.run()
+
+port = int(os.environ.get("PORT", 5000))  # Render ke PORT ko use karo
+app.run(host="0.0.0.0", port=port, debug=True)
+
